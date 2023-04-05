@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="app/static/css/bootstrap.css"> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <title>Title</title>
+  <script>
+    $(document).ready(function () {
+
+      var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount: 5,
+        searchResultLimit: 5,
+        renderChoiceLimit: 5
+      });
+
+
+    });
+  </script>
+  <style>
+    .mt-100 {
+      margin-top: 100px
+    }
+
+    body {
+      background: #00B4DB;
+      background: -webkit-linear-gradient(to right, #e8e8e8, #e8e8e8);
+      background: linear-gradient(to right, #e8e8e8, #e8e8e8);
+      color: #514B64;
+      min-height: 100vh
+    }
+
+    .form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-bottom: 0.4em;
+      background-color: #171717;
+      border-radius: 25px;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 10%;
+    }
+
+    .form:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+      border: 1px solid black;
+    }
+
+    #heading {
+      text-align: center;
+      margin: 2em;
+      color: rgb(255, 255, 255);
+      font-size: 1.2em;
+    }
+
+    .field {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 0.5em;
+      border-radius: 25px;
+      padding: 0.6em;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: #171717;
+      -webkit-box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+      box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    }
+
+    .input-icon {
+      height: 1.3em;
+      width: 1.3em;
+      fill: white;
+    }
+
+    .input-field {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #d3d3d3;
+    }
+
+    .form .btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-top: 2.5em;
+    }
+
+    .button1 {
+      padding: 0.5em;
+      padding-left: 1.1em;
+      padding-right: 1.1em;
+      border-radius: 5px;
+      margin-right: 0.5em;
+      border: none;
+      outline: none;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      background-color: #252525;
+      color: white;
+    }
+
+    .button1:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .button2 {
+      padding: 0.5em;
+      padding-left: 2.3em;
+      padding-right: 2.3em;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      background-color: #252525;
+      color: white;
+    }
+
+    .button2:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .button3 {
+      margin-bottom: 3em;
+      padding: 0.5em;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      -webkit-transition: .4s ease-in-out;
+      transition: .4s ease-in-out;
+      background-color: #252525;
+      color: white;
+    }
+
+    .button3:hover {
+      background-color: red;
+      color: white;
+    }
+
+    @media only screen and (max-width: 740px) {
+
+
+      .form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 0.4em;
+        background-color: #171717;
+        border-radius: 25px;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 200px;
+      }
+
+    }
+
+    input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #d3d3d3;
+
+
+    }
+
+    .helptext {
+      display: none;
+    }
+
+    .icon {
+      color: white;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+  {% block content %}
+
+  {% endblock %}
+
+</body>
+
+</html>
